@@ -119,3 +119,67 @@
   width: 100%;
   position: absolute;
 }
+/* Logo Styling */
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo {
+  height: 2.5rem; /* Adjust based on your logo's aspect ratio */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+/* If you need to adjust spacing */
+.flex-shrink-0 {
+  margin-right: 1rem; /* Adds space between logo and nav items */
+}
+
+/* Mobile logo adjustments */
+@media (max-width: 767px) {
+  .nav-logo {
+    height: 2rem; /* Slightly smaller on mobile */
+  }
+}
+
+/* Logo Styling - Add this to your existing CSS */
+.flex-shrink-0.flex.items-center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-shrink-0.flex.items-center a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-shrink-0.flex.items-center img {
+    height: 40px; /* Adjust this value to match your logo's ideal height */
+    width: auto;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.flex-shrink-0.flex.items-center img:hover {
+    transform: scale(1.05);
+}
+
+/* Adjust navigation spacing if needed */
+.flex.items-center {
+    gap: 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .flex-shrink-0.flex.items-center img {
+        height: 32px; /* Slightly smaller logo on mobile */
+    }
+}
