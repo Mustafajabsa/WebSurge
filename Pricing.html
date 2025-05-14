@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSurge | Pricing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <head>
+      <!-- Navigation -->
+      <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0 flex items-center">
+                <i
+                  class="fas fa-bolt text-blue-600 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+                ></i>
+                <a href="index.html" class="text-xl font-bold text-blue-800"
+                  >WebSurge</a
+                >
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Home
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="services.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Services
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="Pricing.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Pricing
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="About.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                About
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="contact.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Contact
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </div>
+            <div class="md:hidden flex items-center">
+              <button
+                id="menu-btn"
+                class="text-blue-900 hover:text-blue-600 focus:outline-none transition duration-300"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-200"
+        >
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="index.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Services</a
+            >
+            <a
+              href="Pricing.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Pricing</a
+            >
+            <a
+              href="About.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Pricing Page -->
+      <section id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-blue-900 mb-4 fade-in slide-up"
+            >
+              Transparent Pricing
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in slide-up">
+              Simple, straightforward pricing with no hidden fees
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- Basic Plan -->
+            <div
+              class="price-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 fade-in"
+            >
+              <div class="p-8 text-center">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Starter</h3>
+                <div class="text-5xl font-bold text-blue-600 mb-6">
+                  $299<span class="text-xl text-gray-500">/project</span>
+                </div>
+                <p class="text-gray-600 mb-8">
+                  Perfect for small businesses and personal projects
+                </p>
+                <ul class="space-y-3 mb-8 text-left">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">5-page responsive website</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">Basic SEO setup</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">Contact form integration</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">1 email account setup</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">1 month support</span>
+                  </li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            <!-- Popular Plan -->
+            <div
+              class="price-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 fade-in"
+              style="transform: translateY(-10px)"
+            >
+              <div class="relative">
+                <div
+                  class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-bl-lg"
+                >
+                  POPULAR
+                </div>
+              </div>
+              <div class="p-8 text-center">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Business</h3>
+                <div class="text-5xl font-bold text-blue-600 mb-6">
+                  $799<span class="text-xl text-gray-500">/project</span>
+                </div>
+                <p class="text-gray-600 mb-8">
+                  Ideal for growing businesses with more complex needs
+                </p>
+                <ul class="space-y-3 mb-8 text-left">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700"
+                      >10-page responsive website</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">Advanced SEO optimization</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700"
+                      >CMS integration (WordPress)</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">5 email accounts setup</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">3 months support</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700"
+                      >Basic logo design included</span
+                    >
+                  </li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div
+              class="price-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 fade-in"
+            >
+              <div class="p-8 text-center">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">
+                  Enterprise
+                </h3>
+                <div class="text-5xl font-bold text-blue-600 mb-6">Custom</div>
+                <p class="text-gray-600 mb-8">
+                  Tailored solutions for large businesses and organizations
+                </p>
+                <ul class="space-y-3 mb-8 text-left">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">Unlimited pages website</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">E-commerce functionality</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">Custom web applications</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">Unlimited email accounts</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">6 months support</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700"
+                      >Full brand identity package</span
+                    >
+                  </li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-sm p-8 max-w-4xl mx-auto fade-in"
+          >
+            <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">
+              Additional Services
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-server text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-blue-900 mb-1">Hosting Setup</h4>
+                  <p class="text-gray-600">
+                    From $15/month - We'll configure and optimize your hosting
+                    environment
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-search text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-blue-900 mb-1">SEO Services</h4>
+                  <p class="text-gray-600">
+                    From $199/month - Improve your search engine rankings
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-sync-alt text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-blue-900 mb-1">Content Updates</h4>
+                  <p class="text-gray-600">
+                    From $49/hour - Regular content updates and maintenance
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-shield-alt text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-blue-900 mb-1">Security Audit</h4>
+                  <p class="text-gray-600">
+                    From $299 - Comprehensive security assessment and hardening
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="fade-in">
+              <div class="flex items-center mb-4">
+                <i
+                  class="fas fa-bolt text-blue-300 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+                ></i>
+                <span class="text-xl font-bold text-white">WebSurge</span>
+              </div>
+              <p class="text-blue-200 mb-4">
+                Professional IT services to elevate your digital presence.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="fade-in" style="transition-delay: 0.1s">
+              <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="Pricing.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="About.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="fade-in" style="transition-delay: 0.2s">
+              <h4 class="text-lg font-bold mb-4">Services</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Email Setup</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Logo Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Video Editing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="fade-in" style="transition-delay: 0.3s">
+              <h4 class="text-lg font-bold mb-4">Contact</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-map-marker-alt text-blue-300 mr-2 mt-1"></i>
+                  <span class="text-blue-200"
+                    >123 Business Ave, San Francisco</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-envelope text-blue-300 mr-2 mt-1"></i>
+                  <span class="text-blue-200">hello@websurge.com</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-phone text-blue-300 mr-2 mt-1"></i>
+                  <span class="text-blue-200">+1 (234) 567-8900</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center fade-in"
+          >
+            <p class="text-blue-300 mb-4 md:mb-0">
+              © 2023 WebSurge. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="Privacy.html"
+                class="text-blue-300 hover:text-white transition duration-300"
+                >Privacy Policy</a
+              >
+              <a
+                href="terms-of-service.html"
+                class="text-blue-300 hover:text-white transition duration-300"
+                >Terms of Service</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </head>
+  </body>
+</html>

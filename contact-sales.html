@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Sales | WebSurge IT Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+      }
+      .input-focus:focus {
+        box-shadow: 0 0 0 3px rgba(107, 115, 255, 0.3);
+      }
+      .shake {
+        animation: shake 0.5s;
+      }
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20%,
+        60% {
+          transform: translateX(-5px);
+        }
+        40%,
+        80% {
+          transform: translateX(5px);
+        }
+      }
+      .success-message {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
+      }
+      .success-message.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .sales-rep-card {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-left: 5px solid #6b73ff;
+      }
+      .sales-rep-photo {
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .sales-rep-photo:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <i
+                class="fas fa-bolt text-blue-600 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+              ></i>
+              <a href="index.html" class="text-xl font-bold text-blue-800"
+                >WebSurge</a
+              >
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+            >
+              Home
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="services.html"
+              class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+            >
+              Services
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="pricing.html"
+              class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+            >
+              Pricing
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="about.html"
+              class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+            >
+              About
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="contact.html"
+              class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+            >
+              Contact
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button
+              id="menu-btn"
+              class="text-blue-900 hover:text-blue-600 focus:outline-none transition duration-300"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="index.html"
+            class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+            >Services</a
+          >
+          <a
+            href="Pricing.html"
+            class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+            >Pricing</a
+          >
+          <a
+            href="About.html"
+            class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <!-- Sales Representative Section -->
+      <div
+        class="sales-rep-card flex flex-col lg:flex-row gap-8 p-8 rounded-xl mb-12"
+      >
+        <div class="lg:w-2/3">
+          <h1 class="text-3xl font-bold text-gray-800 mb-2">
+            Contact Our Sales Team
+          </h1>
+          <h2 class="text-xl font-semibold text-gray-700 mb-6">
+            Your Dedicated Representative
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <p class="text-lg font-bold text-gray-800">Alex Johnson</p>
+              <p class="text-gray-600 mb-4">Senior Sales Consultant</p>
+
+              <div class="space-y-3">
+                <div class="flex items-center">
+                  <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                  <span>alex.j@websurge.com</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
+                  <span>(555) 123-4567</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-clock text-blue-500 mr-3"></i>
+                  <span>Mon-Fri: 9AM-5PM EST</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center mb-3">
+                <i class="fas fa-star text-yellow-400 mr-3"></i>
+                <span>5+ years helping clients with IT solutions</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-comments text-blue-500 mr-3"></i>
+                <span>Speaks: English, Spanish</span>
+              </div>
+
+              <div class="mt-6">
+                <div class="flex space-x-4">
+                  <a href="#" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-linkedin text-xl"></i>
+                  </a>
+                  <a href="#" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-twitter text-xl"></i>
+                  </a>
+                  <a href="#" class="text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-calendar-alt text-xl"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 flex justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+            alt="Alex Johnson - WebSurge Sales Consultant"
+            loading="lazy"
+            class="sales-rep-photo w-full max-w-xs h-auto object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Left Side - Visual -->
+        <div
+          class="gradient-bg text-white p-8 lg:w-1/3 rounded-xl flex flex-col justify-center"
+        >
+          <div class="mb-8">
+            <i class="fas fa-headset text-5xl mb-4"></i>
+            <h2 class="text-2xl font-bold mb-2">Ready to Get Started?</h2>
+            <p class="opacity-90">
+              Our team will get back to you within 24 hours
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <i class="fas fa-check-circle mr-3"></i>
+              <span>Personalized consultation</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check-circle mr-3"></i>
+              <span>No obligation quote</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check-circle mr-3"></i>
+              <span>Custom solutions for your needs</span>
+            </div>
+          </div>
+          <div class="mt-8 pt-6 border-t border-white border-opacity-20">
+            <h3 class="font-bold mb-3">Other Ways to Reach Us</h3>
+            <div class="flex items-center mb-3">
+              <i class="fas fa-envelope mr-3"></i>
+              <span>sales@websurge.com</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-phone-alt mr-3"></i>
+              <span>+1 (800) 555-1234</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Form -->
+        <div class="bg-white p-8 lg:w-2/3 rounded-xl shadow-lg relative">
+          <div
+            class="success-message absolute inset-0 bg-white rounded-xl flex flex-col items-center justify-center p-8 text-center"
+          >
+            <i class="fas fa-check-circle text-green-500 text-6xl mb-4"></i>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Thank You!</h3>
+            <p class="text-gray-600 mb-6">
+              Your message has been sent successfully. Alex will contact you
+              within 24 hours.
+            </p>
+            <button
+              onclick="resetForm()"
+              class="gradient-bg text-white px-6 py-2 rounded-full hover:opacity-90 transition"
+            >
+              Send Another Message
+            </button>
+          </div>
+
+          <div id="form-container">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+              Tell Us About Your Project
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Fill out the form below and we'll create a custom solution for
+              your needs.
+            </p>
+
+            <form
+              id="salesForm"
+              class="space-y-5"
+              action="/submit-form"
+              method="POST"
+            >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Full Name *</label
+                  >
+                  <div class="relative">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg input-focus focus:outline-none focus:border-blue-500 transition"
+                      placeholder="John Doe"
+                    />
+                    <i
+                      class="fas fa-user absolute right-3 top-3.5 text-gray-400"
+                    ></i>
+                  </div>
+                  <p class="text-red-500 text-xs mt-1 hidden" id="nameError">
+                    Please enter your full name
+                  </p>
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Email *</label
+                  >
+                  <div class="relative">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg input-focus focus:outline-none focus:border-blue-500 transition"
+                      placeholder="john.doe@example.com"
+                    />
+                    <i
+                      class="fas fa-envelope absolute right-3 top-3.5 text-gray-400"
+                    ></i>
+                  </div>
+                  <p class="text-red-500 text-xs mt-1 hidden" id="emailError">
+                    Please enter a valid email address
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Phone Number</label
+                >
+                <div class="relative">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg input-focus focus:outline-none focus:border-blue-500 transition"
+                    placeholder="(123) 456-7890"
+                  />
+                  <i
+                    class="fas fa-phone-alt absolute right-3 top-3.5 text-gray-400"
+                  ></i>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="service"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Service Interested In *</label
+                >
+                <div class="relative">
+                  <select
+                    id="service"
+                    name="service"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg input-focus focus:outline-none focus:border-blue-500 transition appearance-none"
+                  >
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="web-dev">Web Development</option>
+                    <option value="email">Official Email Setup</option>
+                    <option value="logo">Logo Design</option>
+                    <option value="video">Video Editing</option>
+                    <option value="photoshop">Photoshop Services</option>
+                  </select>
+                  <i
+                    class="fas fa-chevron-down absolute right-3 top-3.5 text-gray-400 pointer-events-none"
+                  ></i>
+                </div>
+                <p class="text-red-500 text-xs mt-1 hidden" id="serviceError">
+                  Please select a service
+                </p>
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Project Details *</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg input-focus focus:outline-none focus:border-blue-500 transition"
+                  placeholder="Tell us about your project requirements, timeline, and budget..."
+                ></textarea>
+                <p class="text-red-500 text-xs mt-1 hidden" id="messageError">
+                  Please enter your project details
+                </p>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                    checked
+                    class="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                  />
+                </div>
+                <label for="newsletter" class="ml-2 text-sm text-gray-700">
+                  Subscribe to our newsletter for tips, updates, and special
+                  offers.
+                </label>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    required
+                    class="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                  />
+                </div>
+                <label for="consent" class="ml-2 text-sm text-gray-700">
+                  I agree to receive communications from WebSurge IT Services
+                  regarding this inquiry.
+                </label>
+              </div>
+              <p class="text-red-500 text-xs mt-1 hidden" id="consentError">
+                Please agree to receive communications
+              </p>
+
+              <button
+                type="submit"
+                class="gradient-bg text-white w-full py-3 rounded-lg font-medium hover:opacity-90 transition flex items-center justify-center"
+              >
+                <i class="fas fa-paper-plane mr-2"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-blue-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="fade-in">
+            <div class="flex items-center mb-4">
+              <i
+                class="fas fa-bolt text-blue-300 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+              ></i>
+              <span class="text-xl font-bold text-white">WebSurge</span>
+            </div>
+            <p class="text-blue-200 mb-4">
+              Professional IT services to elevate your digital presence.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="fade-in" style="transition-delay: 0.1s">
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Pricing.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="About.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="fade-in" style="transition-delay: 0.2s">
+            <h4 class="text-lg font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Email Setup</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Logo Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Video Editing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="fade-in" style="transition-delay: 0.3s">
+            <h4 class="text-lg font-bold mb-4">Contact</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-blue-300 mr-2 mt-1"></i>
+                <span class="text-blue-200"
+                  >123 Business Ave, San Francisco</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope text-blue-300 mr-2 mt-1"></i>
+                <span class="text-blue-200">hello@websurge.com</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone text-blue-300 mr-2 mt-1"></i>
+                <span class="text-blue-200">+1 (234) 567-8900</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center fade-in"
+        >
+          <p class="text-blue-300 mb-4 md:mb-0">
+            © 2023 WebSurge. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="Privacy.html"
+              class="text-blue-300 hover:text-white transition duration-300"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-of-service.html"
+              class="text-blue-300 hover:text-white transition duration-300"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("salesForm");
+        const successMessage = document.querySelector(".success-message");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Reset error states
+          document.querySelectorAll('[id$="Error"]').forEach((el) => {
+            el.classList.add("hidden");
+          });
+
+          let isValid = true;
+
+          // Validate required fields
+          const requiredFields = ["name", "email", "service", "message"];
+          requiredFields.forEach((field) => {
+            const input = document.getElementById(field);
+            const errorElement = document.getElementById(`${field}Error`);
+
+            if (!input.value.trim()) {
+              input.classList.add("shake");
+              errorElement.classList.remove("hidden");
+              isValid = false;
+
+              setTimeout(() => {
+                input.classList.remove("shake");
+              }, 500);
+            }
+          });
+
+          // Validate email format
+          const email = document.getElementById("email");
+          const emailError = document.getElementById("emailError");
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (email.value.trim() && !emailRegex.test(email.value)) {
+            email.classList.add("shake");
+            emailError.textContent = "Please enter a valid email address";
+            emailError.classList.remove("hidden");
+            isValid = false;
+
+            setTimeout(() => {
+              email.classList.remove("shake");
+            }, 500);
+          }
+
+          // Validate consent checkbox
+          const consent = document.getElementById("consent");
+          const consentError = document.getElementById("consentError");
+          if (!consent.checked) {
+            consentError.classList.remove("hidden");
+            isValid = false;
+          }
+
+          if (isValid) {
+            // Here you would normally do an AJAX submission or let the form submit naturally
+            // For demo purposes, we'll show the success message
+            setTimeout(() => {
+              document.getElementById("form-container").style.display = "none";
+              successMessage.classList.add("show");
+
+              // In a real implementation, you would submit the form here:
+              // form.submit();
+            }, 500);
+          }
+        });
+      });
+
+      function resetForm() {
+        const form = document.getElementById("salesForm");
+        const successMessage = document.querySelector(".success-message");
+        const formContainer = document.getElementById("form-container");
+
+        form.reset();
+        successMessage.classList.remove("show");
+        formContainer.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSurge | Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .hero-gradient {
+        background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      .floating-btn {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .slide-up {
+        transform: translateY(30px);
+      }
+
+      .pulse {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .rotate-icon {
+        transition: transform 0.3s ease;
+      }
+
+      .rotate-icon:hover {
+        transform: rotate(15deg);
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .tab-button.active {
+        background-color: #2563eb;
+        color: white;
+      }
+
+      .price-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .team-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .contact-input:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #2563eb;
+      }
+
+      .map-container {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
+
+      .map-container iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+   
+      <!-- Navigation -->
+      <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0 flex items-center">
+                <i
+                  class="fas fa-bolt text-blue-600 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+                ></i>
+                <a href="index.html" class="text-xl font-bold text-blue-800"
+                  >WebSurge</a
+                >
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Home
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="services.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Services
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="Pricing.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Pricing
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="About.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                About
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="contact.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Contact
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </div>
+            <div class="md:hidden flex items-center">
+              <button
+                id="menu-btn"
+                class="text-blue-900 hover:text-blue-600 focus:outline-none transition duration-300"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-200"
+        >
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="index.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Services</a
+            >
+            <a
+              href="Pricing.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Pricing</a
+            >
+            <a
+              href="About.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Services Page -->
+      <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-blue-900 mb-4 fade-in slide-up"
+            >
+              Our Comprehensive Services
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in slide-up">
+              We offer end-to-end digital solutions to transform your business
+            </p>
+          </div>
+
+          <!-- Service Tabs -->
+          <div class="mb-12 fade-in">
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+              <button
+                onclick="changeTab('web-dev')"
+                class="tab-button active px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition duration-300"
+              >
+                Web Development
+              </button>
+              <button
+                onclick="changeTab('email')"
+                class="tab-button px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition duration-300"
+              >
+                Email Setup
+              </button>
+              <button
+                onclick="changeTab('logo')"
+                class="tab-button px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition duration-300"
+              >
+                Logo Design
+              </button>
+              <button
+                onclick="changeTab('video')"
+                class="tab-button px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition duration-300"
+              >
+                Video Editing
+              </button>
+            </div>
+
+            <!-- Web Development Tab -->
+            <div id="web-dev" class="tab-content active">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 class="text-2xl font-bold text-blue-900 mb-4">
+                    Custom Web Development Solutions
+                  </h3>
+                  <p class="text-gray-600 mb-6">
+                    We build responsive, high-performance websites tailored to
+                    your business needs. Our development process includes:
+                  </p>
+                  <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Custom design and development from scratch</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Mobile-first responsive approach</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700">SEO-optimized structure</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700">E-commerce integration</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Content management systems</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >
+                    Get Started
+                  </a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                    alt="Web Development"
+                    class="rounded-lg shadow-lg w-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Setup Tab -->
+            <div id="email" class="tab-content">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 class="text-2xl font-bold text-blue-900 mb-4">
+                    Professional Email Configuration
+                  </h3>
+                  <p class="text-gray-600 mb-6">
+                    Establish credibility with professional email addresses
+                    using your domain name. Our email setup services include:
+                  </p>
+                  <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Custom domain email setup (you@yourbusiness.com)</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Google Workspace or Microsoft 365 integration</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Email forwarding and aliases</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >SPF, DKIM, and DMARC configuration</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Migration from existing email providers</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >
+                    Get Started
+                  </a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Email Setup"
+                    class="rounded-lg shadow-lg w-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Logo Design Tab -->
+            <div id="logo" class="tab-content">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 class="text-2xl font-bold text-blue-900 mb-4">
+                    Brand Identity & Logo Design
+                  </h3>
+                  <p class="text-gray-600 mb-6">
+                    Create a memorable brand identity with our professional logo
+                    design services:
+                  </p>
+                  <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Custom logo design tailored to your brand</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Multiple design concepts to choose from</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Unlimited revisions until you're satisfied</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Full copyright ownership</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Brand style guide (colors, fonts, usage
+                        guidelines)</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >
+                    Get Started
+                  </a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                    alt="Logo Design"
+                    class="rounded-lg shadow-lg w-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Editing Tab -->
+            <div id="video" class="tab-content">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 class="text-2xl font-bold text-blue-900 mb-4">
+                    Professional Video Editing
+                  </h3>
+                  <p class="text-gray-600 mb-6">
+                    Transform your raw footage into engaging, professional
+                    videos with our editing services:
+                  </p>
+                  <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Commercial and promotional videos</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Social media content (TikTok, Instagram, YouTube)</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Color correction and grading</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Motion graphics and animations</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i
+                        class="fas fa-check-circle text-blue-500 mt-1 mr-3"
+                      ></i>
+                      <span class="text-gray-700"
+                        >Audio enhancement and voice-over integration</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >
+                    Get Started
+                  </a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+                    alt="Video Editing"
+                    class="rounded-lg shadow-lg w-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12 fade-in">
+            <a
+              href="#contact"
+              class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+            >
+              Get a Custom Quote
+            </a>
+          </div>
+        </div>
+      </section>
+  
+
+    
+    <footer class="bg-blue-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="fade-in">
+            <div class="flex items-center mb-4">
+              <i
+                class="fas fa-bolt text-blue-300 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+              ></i>
+              <span class="text-xl font-bold text-white">WebSurge</span>
+            </div>
+            <p class="text-blue-200 mb-4">
+              Professional IT services to elevate your digital presence.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="fade-in" style="transition-delay: 0.1s">
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Pricing.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="About.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="fade-in" style="transition-delay: 0.2s">
+            <h4 class="text-lg font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Email Setup</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Logo Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition duration-300"
+                  >Video Editing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="fade-in" style="transition-delay: 0.3s">
+            <h4 class="text-lg font-bold mb-4">Contact</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-blue-300 mr-2 mt-1"></i>
+                <span class="text-blue-200"
+                  >123 Business Ave, San Francisco</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope text-blue-300 mr-2 mt-1"></i>
+                <span class="text-blue-200">hello@websurge.com</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone text-blue-300 mr-2 mt-1"></i>
+                <span class="text-blue-200">+1 (234) 567-8900</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center fade-in"
+        >
+          <p class="text-blue-300 mb-4 md:mb-0">
+            © 2023 WebSurge. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="Privacy.html"
+              class="text-blue-300 hover:text-white transition duration-300"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-of-service.html"
+              class="text-blue-300 hover:text-white transition duration-300"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

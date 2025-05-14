@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSurge | Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <head>
+      <!-- Navigation -->
+      <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0 flex items-center">
+                <i
+                  class="fas fa-bolt text-blue-600 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+                ></i>
+                <a href="index.html" class="text-xl font-bold text-blue-800"
+                  >WebSurge</a
+                >
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Home
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="services.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Services
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="#pricing"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Pricing
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="About.html"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                About
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+              <a
+                href="#contact"
+                class="text-blue-900 hover:text-blue-600 px-3 py-2 font-medium transition duration-300 relative group"
+              >
+                Contact
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </div>
+            <div class="md:hidden flex items-center">
+              <button
+                id="menu-btn"
+                class="text-blue-900 hover:text-blue-600 focus:outline-none transition duration-300"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-200"
+        >
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="index.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Services</a
+            >
+            <a
+              href="Pricing.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Pricing</a
+            >
+            <a
+              href="About.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Contact Page -->
+      <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-blue-900 mb-4 fade-in slide-up"
+            >
+              Get In Touch
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in slide-up">
+              We'd love to hear about your project and how we can help
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 fade-in">
+            <div>
+              <div class="bg-white rounded-xl shadow-sm p-8 mb-8">
+                <h3 class="text-2xl font-bold text-blue-900 mb-6">
+                  Send Us a Message
+                </h3>
+                <form id="contact-form" class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        for="name"
+                        class="block text-gray-700 font-medium mb-2"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="email"
+                        class="block text-gray-700 font-medium mb-2"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="subject"
+                      class="block text-gray-700 font-medium mb-2"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-gray-700 font-medium mb-2"
+                      >Your Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300"
+                      required
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      class="w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm p-8">
+                <h3 class="text-2xl font-bold text-blue-900 mb-6">
+                  Contact Information
+                </h3>
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                      <i class="fas fa-map-marker-alt text-blue-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-blue-900 mb-1">Our Office</h4>
+                      <p class="text-gray-600">
+                        123 Business Avenue, Suite 456<br />San Francisco, CA
+                        94107
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                      <i class="fas fa-envelope text-blue-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-blue-900 mb-1">Email Us</h4>
+                      <p class="text-gray-600">
+                        hello@websurge.com<br />support@websurge.com
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                      <i class="fas fa-phone text-blue-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-blue-900 mb-1">Call Us</h4>
+                      <p class="text-gray-600">
+                        +1 (234) 567-8900<br />Mon-Fri, 9am-5pm PST
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="bg-white rounded-xl shadow-sm p-8 mb-8">
+                <h3 class="text-2xl font-bold text-blue-900 mb-6">
+                  Frequently Asked Questions
+                </h3>
+                <div class="space-y-4">
+                  <div class="border-b border-gray-200 pb-4">
+                    <button
+                      onclick="toggleFAQ(1)"
+                      class="flex justify-between items-center w-full text-left font-medium text-blue-900 hover:text-blue-600 transition duration-300"
+                    >
+                      <span
+                        >How long does a typical web development project
+                        take?</span
+                      >
+                      <i
+                        id="faq-icon-1"
+                        class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden mt-2 text-gray-600">
+                      <p>
+                        The timeline varies based on project complexity. A basic
+                        5-page website typically takes 2-4 weeks from design to
+                        launch. More complex projects with custom functionality
+                        can take 6-12 weeks. We'll provide a detailed timeline
+                        after understanding your specific requirements.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="border-b border-gray-200 pb-4">
+                    <button
+                      onclick="toggleFAQ(2)"
+                      class="flex justify-between items-center w-full text-left font-medium text-blue-900 hover:text-blue-600 transition duration-300"
+                    >
+                      <span
+                        >Do you offer ongoing maintenance after launch?</span
+                      >
+                      <i
+                        id="faq-icon-2"
+                        class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden mt-2 text-gray-600">
+                      <p>
+                        Yes, we offer various maintenance packages to suit your
+                        needs. Options range from basic security updates to
+                        comprehensive content management. All our projects come
+                        with a warranty period, and we're happy to discuss
+                        ongoing support arrangements that fit your budget.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="border-b border-gray-200 pb-4">
+                    <button
+                      onclick="toggleFAQ(3)"
+                      class="flex justify-between items-center w-full text-left font-medium text-blue-900 hover:text-blue-600 transition duration-300"
+                    >
+                      <span
+                        >What information do you need to start my project?</span
+                      >
+                      <i
+                        id="faq-icon-3"
+                        class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden mt-2 text-gray-600">
+                      <p>
+                        We'll need to understand your business goals, target
+                        audience, and any specific features you require. For
+                        design projects, sharing examples of styles you like is
+                        helpful. For technical projects, we may need access to
+                        existing systems or credentials. During our initial
+                        consultation, we'll provide a complete checklist
+                        tailored to your project.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="border-b border-gray-200 pb-4">
+                    <button
+                      onclick="toggleFAQ(4)"
+                      class="flex justify-between items-center w-full text-left font-medium text-blue-900 hover:text-blue-600 transition duration-300"
+                    >
+                      <span>How do you handle revisions and feedback?</span>
+                      <i
+                        id="faq-icon-4"
+                        class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden mt-2 text-gray-600">
+                      <p>
+                        We build revision cycles into every project plan. For
+                        design work, we typically include 2-3 rounds of
+                        revisions in our proposals. For development projects, we
+                        use agile methodologies with regular checkpoints for
+                        feedback. Our goal is to ensure you're completely
+                        satisfied with the final product.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <button
+                      onclick="toggleFAQ(5)"
+                      class="flex justify-between items-center w-full text-left font-medium text-blue-900 hover:text-blue-600 transition duration-300"
+                    >
+                      <span
+                        >What makes WebSurge different from other
+                        agencies?</span
+                      >
+                      <i
+                        id="faq-icon-5"
+                        class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <div id="faq-content-5" class="hidden mt-2 text-gray-600">
+                      <p>
+                        Our combination of technical expertise, creative talent,
+                        and client-focused approach sets us apart. We take time
+                        to truly understand your business, not just your
+                        technical requirements. Our team stays at the forefront
+                        of industry trends, and we're committed to delivering
+                        solutions that drive real business results, not just
+                        pretty websites.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.225010595263!2d-122.4194159240172!3d37.77492947189944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1689874567890!5m2!1sen!2s"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="fade-in">
+              <div class="flex items-center mb-4">
+                <i
+                  class="fas fa-bolt text-blue-300 text-2xl mr-2 animate__animated animate__pulse animate__infinite animate__slower"
+                ></i>
+                <span class="text-xl font-bold text-white">WebSurge</span>
+              </div>
+              <p class="text-blue-200 mb-4">
+                Professional IT services to elevate your digital presence.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="fade-in" style="transition-delay: 0.1s">
+              <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="Pricing.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="About.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="fade-in" style="transition-delay: 0.2s">
+              <h4 class="text-lg font-bold mb-4">Services</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Email Setup</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Logo Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-blue-200 hover:text-white transition duration-300"
+                    >Video Editing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="fade-in" style="transition-delay: 0.3s">
+              <h4 class="text-lg font-bold mb-4">Contact</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-map-marker-alt text-blue-300 mr-2 mt-1"></i>
+                  <span class="text-blue-200"
+                    >123 Business Ave, San Francisco</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-envelope text-blue-300 mr-2 mt-1"></i>
+                  <span class="text-blue-200">hello@websurge.com</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-phone text-blue-300 mr-2 mt-1"></i>
+                  <span class="text-blue-200">+1 (234) 567-8900</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center fade-in"
+          >
+            <p class="text-blue-300 mb-4 md:mb-0">
+              © 2023 WebSurge. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="Privacy.html"
+                class="text-blue-300 hover:text-white transition duration-300"
+                >Privacy Policy</a
+              >
+              <a
+                href="terms-of-service.html"
+                class="text-blue-300 hover:text-white transition duration-300"
+                >Terms of Service</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </head>
+  </body>
+</html>
