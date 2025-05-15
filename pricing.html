@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebSurge | Services</title>
+    <title>WebSurge | Pricing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -365,291 +365,219 @@
         </div>
       </div>
     </nav>
-    <!-- Services Page -->
-    <section id="services" class="py-20 bg-white">
+
+    <!-- Pricing Page -->
+    <section id="pricing" class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2
             class="text-3xl md:text-4xl font-bold text-blue-900 mb-4 fade-in slide-up"
           >
-            Our Comprehensive Services
+            Transparent Pricing
           </h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in slide-up">
-            We offer end-to-end digital solutions to transform your business
+            Simple, straightforward pricing with no hidden fees
           </p>
         </div>
 
-        <!-- Service Tabs -->
-        <div class="mb-12 fade-in">
-          <div class="flex flex-wrap justify-center gap-2 mb-8">
-            <button
-              onclick="changeTab('web-dev')"
-              class="tab-button active px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition duration-300"
-            >
-              Web Development
-            </button>
-            <button
-              onclick="changeTab('email')"
-              class="tab-button px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition duration-300"
-            >
-              Email Setup
-            </button>
-            <button
-              onclick="changeTab('logo')"
-              class="tab-button px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition duration-300"
-            >
-              Logo Design
-            </button>
-            <button
-              onclick="changeTab('video')"
-              class="tab-button px-6 py-2 rounded-full bg-gray-200 text-gray-800 font-medium hover:bg-gray-300 transition duration-300"
-            >
-              Video Editing
-            </button>
-          </div>
-
-          <!-- Web Development Tab -->
-          <div id="web-dev" class="tab-content active">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 class="text-2xl font-bold text-blue-900 mb-4">
-                  Custom Web Development Solutions
-                </h3>
-                <p class="text-gray-600 mb-6">
-                  We build responsive, high-performance websites tailored to
-                  your business needs. Our development process includes:
-                </p>
-                <ul class="space-y-3 mb-8">
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Custom design and development from scratch</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Mobile-first responsive approach</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700">SEO-optimized structure</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700">E-commerce integration</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Content management systems</span
-                    >
-                  </li>
-                </ul>
-                <a
-                  href="contact-sales.html"
-                  class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
-                >
-                  Get Started
-                </a>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <!-- Basic Plan -->
+          <div
+            class="price-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 fade-in"
+          >
+            <div class="p-8 text-center">
+              <h3 class="text-2xl font-bold text-blue-900 mb-4">Starter</h3>
+              <div class="text-5xl font-bold text-blue-600 mb-6">
+                $299<span class="text-xl text-gray-500">/project</span>
               </div>
-              <div class="bg-gray-100 p-6 rounded-xl">
-                <img
-                  src="ws2.jpg"
-                  alt="Web Development"
-                  class="rounded-lg shadow-lg w-full"
-                />
-              </div>
+              <p class="text-gray-600 mb-8">
+                Perfect for small businesses and personal projects
+              </p>
+              <ul class="space-y-3 mb-8 text-left">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">5-page responsive website</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Basic SEO setup</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Contact form integration</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">1 email account setup</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">1 month support</span>
+                </li>
+              </ul>
+              <a
+                href="contact-sales.html"
+                class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Get Started
+              </a>
             </div>
           </div>
 
-          <!-- Email Setup Tab -->
-          <div id="email" class="tab-content">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 class="text-2xl font-bold text-blue-900 mb-4">
-                  Professional Email Configuration
-                </h3>
-                <p class="text-gray-600 mb-6">
-                  Establish credibility with professional email addresses using
-                  your domain name. Our email setup services include:
-                </p>
-                <ul class="space-y-3 mb-8">
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Custom domain email setup (you@yourbusiness.com)</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Google Workspace or Microsoft 365 integration</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Email forwarding and aliases</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >SPF, DKIM, and DMARC configuration</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Migration from existing email providers</span
-                    >
-                  </li>
-                </ul>
-                <a
-                  href="https://cal.com/mustafa-omer-iqnsd2"
-                  class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
-                >
-                  Get Started
-                </a>
+          <!-- Popular Plan -->
+          <div
+            class="price-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 fade-in"
+            style="transform: translateY(-10px)"
+          >
+            <div class="relative">
+              <div
+                class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-bl-lg"
+              >
+                POPULAR
               </div>
-              <div class="bg-gray-100 p-6 rounded-xl">
-                <img
-                  src="emails.avif"
-                  alt="Email Setup"
-                  class="rounded-lg shadow-lg w-full"
-                />
+            </div>
+            <div class="p-8 text-center">
+              <h3 class="text-2xl font-bold text-blue-900 mb-4">Business</h3>
+              <div class="text-5xl font-bold text-blue-600 mb-6">
+                $799<span class="text-xl text-gray-500">/project</span>
               </div>
+              <p class="text-gray-600 mb-8">
+                Ideal for growing businesses with more complex needs
+              </p>
+              <ul class="space-y-3 mb-8 text-left">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">10-page responsive website</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Advanced SEO optimization</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">CMS integration (WordPress)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">5 email accounts setup</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">3 months support</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Basic logo design included</span>
+                </li>
+              </ul>
+              <a
+                href="contact-sales.html"
+                class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Get Started
+              </a>
             </div>
           </div>
 
-          <!-- Logo Design Tab -->
-          <div id="logo" class="tab-content">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 class="text-2xl font-bold text-blue-900 mb-4">
-                  Brand Identity & Logo Design
-                </h3>
-                <p class="text-gray-600 mb-6">
-                  Create a memorable brand identity with our professional logo
-                  design services:
-                </p>
-                <ul class="space-y-3 mb-8">
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Custom logo design tailored to your brand</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Multiple design concepts to choose from</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Unlimited revisions until you're satisfied</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700">Full copyright ownership</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Brand style guide (colors, fonts, usage guidelines)</span
-                    >
-                  </li>
-                </ul>
-                <a
-                  href="https://cal.com/moatassim-mohamad-12hso5"
-                  class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
-                >
-                  Get Started
-                </a>
-              </div>
-              <div class="bg-gray-100 p-6 rounded-xl">
-                <img
-                  src="logodesign.avif"
-                  alt="Logo Design"
-                  class="rounded-lg shadow-lg w-full"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- Video Editing Tab -->
-          <div id="video" class="tab-content">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 class="text-2xl font-bold text-blue-900 mb-4">
-                  Professional Video Editing
-                </h3>
-                <p class="text-gray-600 mb-6">
-                  Transform your raw footage into engaging, professional videos
-                  with our editing services:
-                </p>
-                <ul class="space-y-3 mb-8">
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Commercial and promotional videos</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Social media content (TikTok, Instagram, YouTube)</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Color correction and grading</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Motion graphics and animations</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                    <span class="text-gray-700"
-                      >Audio enhancement and voice-over integration</span
-                    >
-                  </li>
-                </ul>
-                <a
-                  href="https://cal.com/mustafa-omer-iqnsd2"
-                  class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
-                >
-                  Get Started
-                </a>
-              </div>
-              <div class="bg-gray-100 p-6 rounded-xl">
-                <img
-                  src="video.avif"
-                  alt="Video Editing"
-                  class="rounded-lg shadow-lg w-full"
-                />
-              </div>
+          <!-- Enterprise Plan -->
+          <div
+            class="price-card bg-white rounded-xl shadow-md overflow-hidden transition duration-500 fade-in"
+          >
+            <div class="p-8 text-center">
+              <h3 class="text-2xl font-bold text-blue-900 mb-4">Enterprise</h3>
+              <div class="text-5xl font-bold text-blue-600 mb-6">Custom</div>
+              <p class="text-gray-600 mb-8">
+                Tailored solutions for large businesses and organizations
+              </p>
+              <ul class="space-y-3 mb-8 text-left">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Unlimited pages website</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">E-commerce functionality</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Custom web applications</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Unlimited email accounts</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">6 months support</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                  <span class="text-gray-700">Full brand identity package</span>
+                </li>
+              </ul>
+              <a
+                href="contact-sales.html"
+                class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Contact Us
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="text-center mt-12 fade-in">
-          <a
-            href="contact-sales.html"
-            class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"
-          >
-            Get a Custom Quote
-          </a>
+        <div
+          class="bg-white rounded-xl shadow-sm p-8 max-w-4xl mx-auto fade-in"
+        >
+          <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">
+            Additional Services
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex items-start">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-server text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-900 mb-1">Hosting Setup</h4>
+                <p class="text-gray-600">
+                  From $15/month - We'll configure and optimize your hosting
+                  environment
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-search text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-900 mb-1">SEO Services</h4>
+                <p class="text-gray-600">
+                  From $199/month - Improve your search engine rankings
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-sync-alt text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-900 mb-1">Content Updates</h4>
+                <p class="text-gray-600">
+                  From $49/hour - Regular content updates and maintenance
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-shield-alt text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-900 mb-1">Security Audit</h4>
+                <p class="text-gray-600">
+                  From $299 - Comprehensive security assessment and hardening
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebSurge | Professional IT Services</title>
+    <title>WebSurge | Homer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -18,7 +18,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
@@ -28,8 +27,8 @@
           <div class="flex items-center">
             <div class="flex-shrink-0 flex items-center">
               <a href="index.html" class="text-xl font-bold text-blue-800"
-                ><img src="logo.jpg" alt=""></a
-              >
+                ><img src="logo.jpg" alt=""
+              /></a>
             </div>
           </div>
           <div class="hidden md:flex items-center space-x-8">
@@ -118,12 +117,12 @@
             >Services</a
           >
           <a
-            href="Pricing.html"
+            href="pricing.html"
             class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
             >Pricing</a
           >
           <a
-            href="About.html"
+            href="about.html"
             class="block px-3 py-2 text-blue-900 hover:text-blue-600 font-medium transition duration-300"
             >About</a
           >
@@ -137,8 +136,27 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20 md:py-32 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      class="hero-video text-white py-20 md:py-32 overflow-hidden relative"
+    >
+      <!-- Video Background -->
+      <div class="video-background">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="w-full h-full object-cover"
+        >
+          <source
+            src="https://cdn.pixabay.com/video/2017/11/02/12716-241674181_tiny.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="md:flex items-center justify-between">
           <div class="md:w-1/2 mb-10 md:mb-0">
             <h1
@@ -162,15 +180,54 @@
             class="md:w-1/2 flex justify-center animate__animated animate__fadeInRight"
           >
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              src="hiro.avif"
               alt="Web Development"
               class="rounded-lg shadow-2xl w-full max-w-md transform transition duration-500 hover:scale-105"
             />
           </div>
         </div>
       </div>
-    </section>
 
+      <!-- New Wave Divider (placed above the existing one) -->
+      <div class="custom-shape-divider-bottom-1747298769">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Original Shape Divider -->
+      <div class="custom-shape-divider-bottom-1747297956">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
     <!-- Services Page -->
     <section id="services" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -262,7 +319,7 @@
               </div>
               <div class="bg-gray-100 p-6 rounded-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                  src="ws2.jpg"
                   alt="Web Development"
                   class="rounded-lg shadow-lg w-full"
                 />
@@ -314,7 +371,7 @@
                   </li>
                 </ul>
                 <a
-                  href="contact-sales.html"
+                  href="https://cal.com/mustafa-omer-iqnsd2"
                   class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
                 >
                   Get Started
@@ -322,7 +379,7 @@
               </div>
               <div class="bg-gray-100 p-6 rounded-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  src="emails.avif"
                   alt="Email Setup"
                   class="rounded-lg shadow-lg w-full"
                 />
@@ -372,7 +429,7 @@
                   </li>
                 </ul>
                 <a
-                  href="contact-sales.html"
+                  href="https://cal.com/moatassim-mohamad-12hso5"
                   class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
                 >
                   Get Started
@@ -380,7 +437,7 @@
               </div>
               <div class="bg-gray-100 p-6 rounded-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                  src="logodesign.avif"
                   alt="Logo Design"
                   class="rounded-lg shadow-lg w-full"
                 />
@@ -432,7 +489,7 @@
                   </li>
                 </ul>
                 <a
-                  href="contact-sales.html"
+                  href="https://cal.com/mustafa-omer-iqnsd2"
                   class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300"
                 >
                   Get Started
@@ -440,7 +497,7 @@
               </div>
               <div class="bg-gray-100 p-6 rounded-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+                  src="video.avif"
                   alt="Video Editing"
                   class="rounded-lg shadow-lg w-full"
                 />
@@ -778,26 +835,32 @@
             >
               <div class="overflow-hidden h-64">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  src="mustafa-removebg-preview.png"
                   alt="Alex Johnson"
                   class="w-full h-full object-cover transition duration-500"
                 />
               </div>
               <div class="p-6">
                 <h4 class="text-xl font-bold text-blue-900 mb-1">
-                  Alex Johnson
+                  Mustafa Omer
                 </h4>
-                <p class="text-blue-600 font-medium mb-3">CEO & Founder</p>
+                <p class="text-blue-600 font-medium mb-3">
+                  CEO and Senior Full Stack Web Developer
+                </p>
                 <p class="text-gray-600 text-sm">
-                  With over 15 years in the industry, Alex leads our strategic
-                  vision and client relationships.
+                  Working in the web development over 3 years, and with strong
+                  video editing skills.
                 </p>
                 <div class="flex space-x-3 mt-4">
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
-                    ><i class="fab fa-linkedin-in"></i
+                  <a
+                    href="https://github.com/Mustafajabsa"
+                    class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-github"></i
                   ></a>
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
-                    ><i class="fab fa-twitter"></i
+                  <a
+                    href="https://stackoverflow.com/users/22275542/mustafa"
+                    class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-stack-overflow"></i
                   ></a>
                 </div>
               </div>
@@ -809,25 +872,23 @@
             >
               <div class="overflow-hidden h-64">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                  src="maotassim.jpg"
                   alt="Sarah Chen"
                   class="w-full h-full object-cover transition duration-500"
                 />
               </div>
               <div class="p-6">
-                <h4 class="text-xl font-bold text-blue-900 mb-1">Sarah Chen</h4>
-                <p class="text-blue-600 font-medium mb-3">Creative Director</p>
+                <h4 class="text-xl font-bold text-blue-900 mb-1">Moatassimm Mohamed</h4>
+                <p class="text-blue-600 font-medium mb-3">Graphic Designer</p>
                 <p class="text-gray-600 text-sm">
-                  Sarah's design expertise brings our clients' brands to life
+                  Moatassimm's design expertise brings our clients' brands to life
                   with stunning visual identities.
                 </p>
                 <div class="flex space-x-3 mt-4">
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
+                  <a href="https://www.linkedin.com/in/moatassimm-mohamed-453a7b25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-blue-400 hover:text-blue-600"
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
-                    ><i class="fab fa-dribbble"></i
-                  ></a>
+                  
                 </div>
               </div>
             </div>
@@ -838,26 +899,22 @@
             >
               <div class="overflow-hidden h-64">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  src="owis.jpg"
                   alt="Michael Rodriguez"
                   class="w-full h-full object-cover transition duration-500"
                 />
               </div>
               <div class="p-6">
                 <h4 class="text-xl font-bold text-blue-900 mb-1">
-                  Michael Rodriguez
+                  Owis
                 </h4>
-                <p class="text-blue-600 font-medium mb-3">Lead Developer</p>
+                <p class="text-blue-600 font-medium mb-3">Co-Founder and Lead Sales</p>
                 <p class="text-gray-600 text-sm">
-                  Michael architects our technical solutions with clean,
-                  efficient, and scalable code.
+                  Owis is a hard working and experienced sales manager, he is the cofounder of web surge.
                 </p>
                 <div class="flex space-x-3 mt-4">
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
-                    ><i class="fab fa-stack-overflow"></i
+                  <a href="https://www.instagram.com/owisnextdoor/" class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-instagram"></i
                   ></a>
                 </div>
               </div>
@@ -869,27 +926,25 @@
             >
               <div class="overflow-hidden h-64">
                 <img
-                  src="https://images.unsplash.com/photo-1489424731084-a5d8b219a7bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  src="eslam-removebg-preview (1).png"
                   alt="Emily Wilson"
                   class="w-full h-full object-cover transition duration-500"
                 />
               </div>
               <div class="p-6">
                 <h4 class="text-xl font-bold text-blue-900 mb-1">
-                  Emily Wilson
+                  Eslam Mahdi
                 </h4>
                 <p class="text-blue-600 font-medium mb-3">Project Manager</p>
                 <p class="text-gray-600 text-sm">
-                  Emily ensures every project runs smoothly, on time, and
+                  Eslam ensures every project runs smoothly, on time, and
                   exceeds client expectations.
                 </p>
                 <div class="flex space-x-3 mt-4">
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
-                    ><i class="fab fa-linkedin-in"></i
+                  <a href="https://www.instagram.com/eslammahdi666/" class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-instagram"></i
                   ></a>
-                  <a href="#" class="text-blue-400 hover:text-blue-600"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
+
                 </div>
               </div>
             </div>
@@ -1000,8 +1055,7 @@
                   <div>
                     <h4 class="font-bold text-blue-900 mb-1">Our Office</h4>
                     <p class="text-gray-600">
-                      123 Business Avenue, Suite 456<br />San Francisco, CA
-                      94107
+                      India<br />Hyderabad
                     </p>
                   </div>
                 </div>
@@ -1012,7 +1066,7 @@
                   <div>
                     <h4 class="font-bold text-blue-900 mb-1">Email Us</h4>
                     <p class="text-gray-600">
-                      hello@websurge.com<br />support@websurge.com
+                      hello@websurge.io<br />support@websurge.io
                     </p>
                   </div>
                 </div>
@@ -1023,7 +1077,7 @@
                   <div>
                     <h4 class="font-bold text-blue-900 mb-1">Call Us</h4>
                     <p class="text-gray-600">
-                      +1 (234) 567-8900<br />Mon-Fri, 9am-5pm PST
+                      +249 96 329 1832<br />India, HYD
                     </p>
                   </div>
                 </div>
@@ -1163,7 +1217,7 @@
             <div class="bg-white rounded-xl shadow-sm overflow-hidden">
               <div class="map-container">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.225010595263!2d-122.4194159240172!3d37.77492947189944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1689874567890!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.25176871577!2d78.40804555!3d17.4123487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1747309228928!5m2!1sen!2sin"
                   width="600"
                   height="450"
                   style="border: 0"
@@ -1209,7 +1263,7 @@
       <i class="fas fa-paper-plane text-xl"></i>
     </a> -->
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="bg-blue-900 text-white py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -1225,25 +1279,25 @@
             </p>
             <div class="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100022859561035"
                 class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
               >
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a
-                href="#"
+                href="https://x.com/Mustafa_jabsa"
                 class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
               >
                 <i class="fab fa-twitter"></i>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mustafa-omer-%D9%85%D8%B5%D8%B7%D9%81%D9%89-%D8%B9%D9%85%D8%B1-4490b71a1/"
                 class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/mustafa_jabsa/"
                 class="text-blue-300 hover:text-white transition duration-300 transform hover:scale-125"
               >
                 <i class="fab fa-instagram"></i>
@@ -1270,14 +1324,14 @@
               </li>
               <li>
                 <a
-                  href="Pricing.html"
+                  href="pricing.html"
                   class="text-blue-200 hover:text-white transition duration-300"
                   >Pricing</a
                 >
               </li>
               <li>
                 <a
-                  href="About.html"
+                  href="about.html"
                   class="text-blue-200 hover:text-white transition duration-300"
                   >About</a
                 >
@@ -1332,16 +1386,16 @@
               <li class="flex items-start">
                 <i class="fas fa-map-marker-alt text-blue-300 mr-2 mt-1"></i>
                 <span class="text-blue-200"
-                  >123 Business Ave, San Francisco</span
+                  >India, HYD</span
                 >
               </li>
               <li class="flex items-start">
                 <i class="fas fa-envelope text-blue-300 mr-2 mt-1"></i>
-                <span class="text-blue-200">hello@websurge.com</span>
+                <span class="text-blue-200">hello@websurge.io</span>
               </li>
               <li class="flex items-start">
                 <i class="fas fa-phone text-blue-300 mr-2 mt-1"></i>
-                <span class="text-blue-200">+1 (234) 567-8900</span>
+                <span class="text-blue-200">+91 93913 28043</span>
               </li>
             </ul>
           </div>

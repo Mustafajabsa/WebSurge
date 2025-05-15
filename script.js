@@ -116,3 +116,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Active navigation highlighting
+document.addEventListener("DOMContentLoaded", function() {
+    // Get current page (case insensitive)
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1).toLowerCase() || 'index.html';
+    
+    // Desktop navigation
+    const navLinks = document.querySelectorAll('.hidden.md\\:flex a[href]');
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        const linkPage = linkPath.substring(linkPath.lastIndexOf('/') + 1).toLowerCase();
+        
+        if (currentPage === linkPage) {
+            link.classList.add('nav-link-active');
+            // Remove the hover underline span since we have our own active indicator
+            const span = link.querySelector('span');
+            if (span) span.style.display = 'none';
+        }
+    });
+    
+    // Mobile navigation
+    const mobileLinks = document.querySelectorAll('#mobile-menu a[href]');
+    mobileLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        const linkPage = linkPath.substring(linkPath.lastIndexOf('/') + 1).toLowerCase();
+        
+        if (currentPage === linkPage) {
+            link.classList.add('active');
+        }
+    });
+    
+    // Rest of your existing JavaScript...
+});
